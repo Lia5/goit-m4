@@ -9,9 +9,6 @@ body {
   background: green;
   width: 1000px;
   margin: 0 auto;
-  font-family: Tahoma, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
   padding: 0;
 }
 .main {
@@ -21,6 +18,7 @@ body {
   
 }
 .logo {
+  width: 283px;
   position: relative;
   background: red;
   min-height: 50px;  
@@ -47,9 +45,16 @@ body {
 }
 
 ul {
-  list-style: none;
+  display: block;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+ul:after {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 li {
@@ -91,6 +96,7 @@ li {
 .picture {
   margin: 0;
   padding: 0;
+  width: 1000px;
   background:springgreen;
   min-height: 20px;
 }
@@ -103,6 +109,7 @@ li {
 .navigation {
   background:#333333;
   min-height: 20px;
+  clear: both;
   font-family: Tahoma, sans-serif;
   font-size: 14px;
   color: #ffffff;
@@ -122,11 +129,49 @@ li {
 
 }
 
+
+
+ul.menu {
+  position: relative;
+}
+ul.menu > li {
+  display: inline-block;
+}
+
+ul.submenu {
+  display: none;
+  position: absolute;
+  width: 175px;
+  top: 20px;
+  left: 107px;
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+ul.submenu > li {
+  display: block;
+
+}
+
+ul.submenu > li > a {
+  display: block;
+  padding-left: 9px;
+  background-color: #000000;
+}
+
+ul.submenu > li > a:hover {
+  text-decoration: underline;
+}
+ul.menu > li:hover > ul.submenu {
+  display: block;
+}
+
 .content {
   overflow: hidden;
   background: #ffffff;
   min-height: 20px;
 }
+
 h3 {
   margin: 0;
   padding: 0;
@@ -179,4 +224,7 @@ h3 {
   background:teal;
   min-height: 20px;
   clear: both;
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+  font-size: 12px;
 }
