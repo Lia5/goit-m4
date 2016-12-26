@@ -6,23 +6,31 @@ body {
 }
 
 .main-container {
-  background: green;
   width: 1000px;
   margin: 0 auto;
   padding: 0;
+  -webkit-box-shadow: 0px 4px 5px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 5px 3px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 5px 3px rgba(0,0,0,0.75);
 }
 .main {
-  background:yellow;
+  background:#ffffff;
   min-height: 20px;
   clear: both;
-  
 }
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
 .logo {
   width: 283px;
   position: relative;
-  background: red;
   min-height: 50px;  
   float: left;  
+  padding-left: 25px;
 }
 .logo-text {
   position: absolute;
@@ -31,11 +39,9 @@ body {
   left: 72px;
 }
 .contact {
-  background:darkcyan;
   min-height: 50px;
   float: right;  
   width: 370px; 
-  
 }
 
 .contact p {
@@ -62,7 +68,6 @@ li {
 }
 
 .countries {
-  background:pink;
   min-height: 20px;  
   float: right;  
   width: 370px;
@@ -89,7 +94,6 @@ li {
 }
 
 .container {
-  background:rebeccapurple;
   min-height: 20px;
 
 }
@@ -97,7 +101,6 @@ li {
   margin: 0;
   padding: 0;
   width: 1000px;
-  background:springgreen;
   min-height: 20px;
 }
 
@@ -156,7 +159,7 @@ ul.submenu > li {
 ul.submenu > li > a {
   display: block;
   padding-left: 9px;
-  background-color: #000000;
+  background-color: #333333;
 }
 
 ul.submenu > li > a:hover {
@@ -195,6 +198,7 @@ h3 {
   font-family: Tahoma, sans-serif;
   font-size: 14px;
   line-height: 24px;
+  padding-top: 7px;
   padding-bottom: 20000px;
   margin-bottom: -20000px;
 }
@@ -207,6 +211,7 @@ h3 {
   font-family: Tahoma, sans-serif;
   font-size: 14px;
   line-height: 24px;
+  padding-top: 7px;
   padding-bottom: 20000px;
   margin-bottom: -20000px;
 }
@@ -221,7 +226,6 @@ h3 {
 }
 
 .copy {
-  background:teal;
   min-height: 20px;
   clear: both;
   text-align: center;
